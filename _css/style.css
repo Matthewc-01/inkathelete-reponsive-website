@@ -23,7 +23,9 @@ a, h1,h2,h3,h4,button,p{
 	font-family:"Roboto";
 	font-size: 20pt;
 }
-
+h1{
+	font-weight: 500;
+}
 
 /* HEADER */
  .logo{
@@ -82,16 +84,17 @@ nav li a{
 	  display: flex;
 	  justify-content: center;
 	  align-items: center; 
+
 }
-#banner::before{
-	opacity: 0.75;
-}
+
+
 
 .banner-description{
 	max-width: 1000px;
 }
 .banner-description h1{
 font-size: 40pt;
+font-weight: 500;
 }
 .banner-description a{
 	background-color: #f8c5b4;
@@ -107,10 +110,12 @@ font-size: 40pt;
 }
 #collection h1{
 	font-size: 30pt;
+	color: white;
 }
 #collection p{
 	text-align: justify;
 	font-size: 20pt;
+	color: white;
 }
 #collection a{
 	background-color: #fff;
@@ -208,13 +213,13 @@ border-bottom: 5px solid #fff;
 	width:  47px;
 }
 .social-icons .fb{
-	margin-right: 30px;
-}
-.social-icons .tw{
 	margin-right: 40px;
 }
+.social-icons .tw{
+	margin-right: 45px;
+}
 .social-icons .ig{
-	margin-right: 35px;
+	margin-right: 40px;
 }
 /* SOCIALS SECTION */
 

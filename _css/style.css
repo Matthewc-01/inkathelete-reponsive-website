@@ -1,13 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
-
 html{
 	margin:0;
 padding:0;
 -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none; 
 }
-
 html::-webkit-scrollbar {
 	display: none;
   }
@@ -26,24 +23,21 @@ a, h1,h2,h3,h4,button,p{
 h1{
 	font-weight: 500;
 }
-
 /* HEADER */
  .logo{
 	text-align: center;
  }
-
  .logo img{
 	margin: 20px 0;
-	height: 100px;
-	width: auto;
+    height: 100%;
+    max-height: 130px;
+    width: auto;
 }
-
 .wrapper{
 	max-width: 1400px;
 	padding: 0 20px;
 	margin: 0 auto;
 }
-
 nav ul{
 	margin: 0;
 	padding: 10px 0;
@@ -86,15 +80,13 @@ nav li a{
 	  align-items: center; 
 
 }
-
-
-
 .banner-description{
 	max-width: 1000px;
 }
 .banner-description h1{
 font-size: 40pt;
 font-weight: 500;
+padding: 20px;
 }
 .banner-description a{
 	background-color: #f8c5b4;
@@ -134,9 +126,7 @@ font-weight: 500;
 #collection .products img:first-of-type{
 	padding-right: 40px;
 }
-
 /* COLLECTION SECTION */
-
 /* GALLERY SECTION */
 #gallery{
 	background-color: #fff;
@@ -152,8 +142,10 @@ font-weight: 500;
 	max-width: 900px;
 	margin: 0 auto 40px;
 }
+.gallery-images img{
+	cursor: pointer;
+}
 /* GALLERY SECTION */
-
 /* SUBSCRIPTION SECTION */
 #subscription{
 text-align: center;
@@ -173,7 +165,7 @@ border-bottom: 5px solid #fff;
 	font-size: 20pt;
 }
 #subscription button{
-	background-color: white; /* Green */
+	background-color: white;
   border: none;
   color: #f8c5b4;
   padding: 10px 15px;
@@ -231,3 +223,40 @@ border-bottom: 5px solid #fff;
 		padding-right: 0;
 	}
 }
+@media screen and (max-width: 876px){
+	.banner-description h1{
+		font-size: 30pt;
+	}
+	#collection h1,#collection a,.banner-description a,#gallery h1,#subscription h1  {
+		font-size: 20pt;
+	}
+	#collection p,#subscription h4,p,#subscription button,a{
+		font-size: 15pt;
+	}
+	@media screen and (max-width: 524px){
+		#subscription input{
+			width: 100%;
+			margin: 0 0 10px;
+		}
+		#subscription{
+			padding: 50px 20px;
+		}
+	}
+	@media screen and (max-width: 375px){
+		#collection .products img{
+			width: 100%;
+		}
+		.logo img{
+			height: 100px;
+		}
+		.banner-description h1{
+			font-size: 25pt;
+		}
+		#collection h1,#collection a,.banner-description a,#gallery h1,#subscription h1  {
+			font-size: 15pt;
+		}
+		#collection p,#subscription h4,p,#subscription button,a{
+			font-size: 10pt;
+		}
+	}
+}	

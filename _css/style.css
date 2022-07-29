@@ -225,15 +225,24 @@ border-bottom: 5px solid #fff;
 }
 @media screen and (max-width: 876px){
 	.banner-description h1{
-		font-size: 30pt;
+		font-size: 35pt;
 	}
 	#collection h1,#collection a,.banner-description a,#gallery h1,#subscription h1  {
-		font-size: 20pt;
+		font-size: 25pt;
 	}
 	#collection p,#subscription h4,p,#subscription button,a{
-		font-size: 15pt;
+		font-size: 20pt;
 	}
 	@media screen and (max-width: 524px){
+		.banner-description h1{
+			font-size: 30pt;
+		}
+		#collection h1,#collection a,.banner-description a,#gallery h1,#subscription h1  {
+			font-size: 20pt;
+		}
+		#collection p,#subscription h4,p,#subscription button,a{
+			font-size: 15pt;
+		}
 		#subscription input{
 			width: 100%;
 			margin: 0 0 10px;
